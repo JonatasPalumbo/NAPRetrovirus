@@ -26,10 +26,10 @@ export class MapaPage {
     let mapOptions: GoogleMapOptions = {
       camera: {
          target: {
-           lat: 43.0741904,
-           lng: -89.3809802
+           lat: -23.5489,
+           lng: -46.6388
          },
-         zoom: 18,
+         zoom: 15,
          tilt: 30
        }
     };
@@ -38,15 +38,12 @@ export class MapaPage {
 
     let marker: Marker = this.map.addMarkerSync({
       title: 'Ionic',
-      icon: 'blue',
+      icon: 'green',
       animation: 'DROP',
       position: {
-        lat: 43.0741904,
-        lng: -89.3809802
+        lat: -23.5489,
+        lng: -46.6388
       }
-    });
-    marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(() => {
-      alert('clicked');
     });
   }  
 }
